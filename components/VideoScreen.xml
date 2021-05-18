@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="VideoScreen" extends="Group">
+    <interface>
+        <field id="videoType" type="string" />
+        <field id="videoUrl" type="string" onChange="playVideo" />
+    </interface>
+    <script type="text/brightscript" uri="VideoScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils/Events.brs" />
+    <children>
+        <Video id="vidPlayer" width="1280" height="720" />        
+    </children>
+</component>

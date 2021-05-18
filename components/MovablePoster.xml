@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="MovablePoster" extends="Poster">
+    <interface>
+        <field id="itemContent" type="node" onChange="setContent"/>
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/MovablePoster.brs" />
+    <children>
+        <Poster id="imageHolder"
+            width="360"
+            height="500" />
+            <Label id="titleHolder" width="360" height="500" horizAlign="center" vertAlign="bottom" />
+    </children>
+</component>

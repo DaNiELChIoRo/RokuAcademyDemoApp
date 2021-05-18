@@ -1,0 +1,15 @@
+# Channel Details
+title=RowListFromRemote
+subtitle=Video Sample From Remote
+mejor_version=1
+minor_version=0
+build_version=1
+
+
+# Channel Assets
+mm_icon_focus_hd=pkg:/images/gumball.png
+mm_icon_focus_sd=pkg:/images/gumball.png
+
+# Splash Screen
+splash_screen_sd=pkg:/images/gumball.png
+splash_screen_hd=pkg:/images/gumball.png

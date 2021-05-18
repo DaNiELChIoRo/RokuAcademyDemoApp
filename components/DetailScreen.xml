@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="DetailScreen" extends="Group">
+    <script type="text/brightscript" uri="DetailScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils/Events.brs" />
+    <interface>        
+        <field id="videoNode" type="node" onChange="onDescriptionChange"/>
+    </interface>
+    <children>
+       <Group id="grp">
+       <LayoutGroup id="lg00" layoutDirection="horiz" vertAlignment="top" 
+            translation="[20, 20]"
+            addItemSpacingAfterChild="true" itemSpacings="[20]">
+            <LayoutGroup id="lg0" layoutDirection="vert" horizAlignment="center"
+                addItemSpacingAfterChild="true" itemSpacings="[20]" >
+                <Poster id="videoPoster"
+                    width="360"
+                    height="500"
+                    />
+                <Button id="playButton" translation="[100, 100]" 
+                    focusedTextColor="0x9b34ebFF"
+                    text="Play Video" 
+                    buttonSelected="onPlayPress"
+                    />
+            </LayoutGroup>
+            <LayoutGroup id="lg" layoutDirection="vert" horizAlignment="center"
+                 addItemSpacingAfterChild="true" itemSpacings="[20]" >
+                 <Label id="titleLbl"
+                    text="Title"
+                    width="500"                    
+                    wrap="true"/>
+                <Label id="descriptionLbl"
+                    text="Video Description."
+                    width="500"
+                    wrap="true"/>
+                <Label id="durationLbl"
+                    text="Duration: "
+                    width="500"
+                    wrap="true"/>
+            </LayoutGroup>
+        </LayoutGroup>
+         <Video id="vidPlayer" width="1280" height="720" />
+        </Group>
+        <Dialog id="alertDialog" title="Error"/>
+    </children>
+</component>

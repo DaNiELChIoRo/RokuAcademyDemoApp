@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="SelectScreen" extends="Group">
+    <script type="text/brightscript" uri="SelectScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils/Events.brs" />
+    <children>
+        <RowList id="exampleList"
+            itemComponentName="MovablePoster"
+            numRows="2"
+            translation="[100, 50]"
+            itemSize="[1200, 560]"
+            rowItemSize="[[360, 500]]"
+            rowItemSpacing="[[40, 0]]"
+            itemSpacing="[0, 40]"
+            rowLabelOffset="[[20, 20]]"
+            showRowLabel="[ true ]"
+            />
+    </children>
+</component>

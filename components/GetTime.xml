@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="GetTime" extends="Task">
+    <interface>
+        <field id="contentUri" type="string" />
+        <field id="content" type="assocArray" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/GetTime.brs" />
+</component>

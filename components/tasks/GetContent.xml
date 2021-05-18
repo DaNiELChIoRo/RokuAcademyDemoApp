@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="GetContent" extends="Task">
+    <interface>
+        <field id="contentUrl" type="string" />
+        <field id="content" type="node" />
+    </interface>
+    <script type="text/brightscript" uri="GetContent.brs" />    
+</component>
